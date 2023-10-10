@@ -25,7 +25,7 @@
 ### 🔎 결과 
 **1. 시스템 흐름**
 
-<img width="600" height="350" src="https://github.com/visAIge/android_studio/assets/87819894/6c9acd74-bdcb-441f-8395-7952c784ba4c"/>
+<img width="600" height="350" src="https://github.com/visAIgeNew/visAIgeProject/assets/87819894/6066702f-9735-482d-bcd8-54ea9f93681e"/>
 <br/><br/><br/><br/>
 
 **2. 하드웨어**
@@ -46,8 +46,21 @@
 
 - 로그인
 <img width="200" height="400" src="https://github.com/visAIge/android_studio/assets/87819894/a427f19f-b385-4b98-b708-6dda9c4b7646"/>
+<br/><br/>
 
 - 메인화면
 <img width="200" height="400" src="https://github.com/visAIge/android_studio/assets/87819894/d6d67945-c7f8-463f-83a6-a949f6950d7f"/>
 <img width="200" height="400" src="https://github.com/visAIge/android_studio/assets/87819894/64d5a03a-935d-4037-9d4e-05fc40c3d8a2"/>
+<br/><br/>
+
+- otp 입력
+<img width="800" height="400" src="https://github.com/visAIgeNew/visAIgeProject/assets/87819894/fb9aabed-ee1c-4740-b647-a4870ce3eb1d"/>
+<br/><br/>
+
+- QR 코드 출력
+<img width="600" height="400" src="https://github.com/visAIgeNew/visAIgeProject/assets/87819894/ca54ae4c-b64f-4742-ae09-25062d354cc7"/>
+<br/><br/>
+
+- 출입 이력 조회
+<img width="200" height="400" src="https://github.com/visAIgeNew/visAIgeProject/assets/87819894/ee2fa559-4a64-404d-b2f3-a86b4e442cd0"/>
 <br/><br/>
