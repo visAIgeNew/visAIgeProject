@@ -4,7 +4,7 @@
 |배선영 (팀장) |배가형|양영준|
 |------|---|---|
 |<div align="center"><img width="200" height="200" src="https://github.com/visAIge/android_studio/assets/87819894/27e2ff02-3bb6-406d-b71f-eecddcfebdd3"/></div>|<div align="center"><img width="200" height="200" src="https://github.com/visAIge/android_studio/assets/87819894/219c2257-46c6-430e-985f-893db864df85"/></div>|<div align="center"><img width="200" height="200" src="https://github.com/visAIge/android_studio/assets/87819894/a110f222-cc14-4cd4-9e94-ad51710c440a"/></div>|
-|- 회의록, PPT, 보고서 작성 및 취합<br/>- 안드로이드 애플리케이션 기능 구현<br/>- Jetson Nano QR 코드 수정·보완<br/>- 데이터베이스 설계|- 보고서, PPT 작성<br/>- 얼굴, 신발 인식 AI 구현 및 관련 데이터 수집<br/>- AI 구동 환경 구축 (Jetson Nano, 윈도우)<br/>- 애플리케이션 UI/UX 수정·보완|- 보고서 작성<br/>- 서보모터를 이용한 카메라 각도 조정부 구현<br/>- 디지털 도어록, 아두이노 연동 및 구현|
+|- 회의록, PPT, 보고서 작성 및 취합<br/>- 안드로이드 애플리케이션 기능 구현<br/>- Jetson Nano QR 코드 수정·보완<br/>- 데이터베이스 설계<br/>- 아두이노 코드 수정·보완|- 보고서, PPT 작성<br/>- 얼굴, 신발 인식 AI 구현 및 관련 데이터 수집<br/>- AI 구동 환경 구축 (Jetson Nano, 윈도우)<br/>- 애플리케이션 UI/UX 수정·보완<br/>- 카메라 각도 조절 설계|- 보고서 작성<br/>- 서보모터를 이용한 카메라 각도 조정부 구현<br/>- 디지털 도어록, 아두이노 연동 및 구현|
 
 
 ### 📌 주요 기능
