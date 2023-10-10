@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f3f3f3"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <Button
+                android:id="@+id/input_password"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Open Door"
+                android:textColor="#000000"
+                android:background="@drawable/btn_style3"
+                android:drawableTop="@drawable/main_doorlock"
+                android:paddingTop="15dp"
+                android:drawablePadding="-20dp"
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="User Info"
+                android:textColor="#000000"
+                android:background="@drawable/btn_style3"
+                android:drawableTop="@drawable/main_user_info"
+                android:paddingTop="20dp"
+                android:drawablePadding="-15dp"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Create QR"
+                android:textColor="#000000"
+                android:background="@drawable/btn_style3"
+                android:drawableTop="@drawable/main_qr"
+                android:paddingTop="15dp"
+                android:drawablePadding="-16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="#f3f3f3"
+            android:gravity="center_horizontal"
+            android:paddingBottom="70dp">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Check QR"
+                android:textColor="#251A1A"
+                android:background="@drawable/btn_style3"
+                android:drawableTop="@drawable/main_qr_check"
+                android:paddingTop="13dp"
+                android:drawablePadding="-10dp"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Search Log"
+                android:textColor="#251A1A"
+                android:background="@drawable/btn_style3"
+                android:drawableTop="@drawable/main_log"
+                android:paddingTop="15dp"
+                android:drawablePadding="-5dp"/>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Input OTP"
+                android:textColor="#251A1A"
+                android:background="@drawable/btn_style3"
+                android:drawableTop="@drawable/main_otp"
+                android:paddingTop="15dp"
+                android:drawablePadding="-15dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

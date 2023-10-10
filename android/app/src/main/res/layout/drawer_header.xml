@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/header_iv"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/user_info_basic"
+        android:layout_margin="15dp" />
+    <TextView
+        android:id="@+id/header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="안녕하세요!"
+        android:textColor="#eeeeee"
+        android:layout_toRightOf="@id/header_iv"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/header_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user1 님"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/header_tv"
+        android:layout_marginTop="50dp" />
+</RelativeLayout>

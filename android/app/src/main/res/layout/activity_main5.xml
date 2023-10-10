@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/log_title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Check Your Log"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:fontFamily="@font/leferipointwhiteoblique"/>
+
+    <LinearLayout
+        android:id="@+id/log_btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="#0C70F2">
+
+        <Button
+            android:id="@+id/pwd_log"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0C70F2"
+            android:text="비밀번호"
+            android:textColor="@color/white"
+            android:fontFamily="@font/thejamsil2light"/>
+
+        <Button
+            android:id="@+id/face_log"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0C70F2"
+            android:text="얼굴 인식"
+            android:textColor="@color/white"
+            android:fontFamily="@font/thejamsil2light"/>
+
+        <Button
+            android:id="@+id/qr_log"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0C70F2"
+            android:text="QR코드"
+            android:textColor="@color/white"
+            android:fontFamily="@font/thejamsil2light"/>
+
+        <Button
+            android:id="@+id/log_go_main"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0C70F2"
+            android:text="메인화면"
+            android:textColor="@color/white"
+            android:fontFamily="@font/thejamsil2light"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_btn_list"
+        android:background="#f1f3f5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_LogList"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

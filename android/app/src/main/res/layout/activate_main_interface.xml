@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_background"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_url="https://assets4.lottiefiles.com/packages/lf20_8xgkc3be.json" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_btn_main_user"
+                    android:drawableTop="@drawable/abstractusericon"
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="11dp"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="visage\ncapstone design"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/vitrocore"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="15dp"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded"
+        app:behavior_peekHeight="300dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/scdream7"
+                android:text="SMART DOORLOCK"
+                android:textSize="30dp" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="2px"
+                android:background="#FFFFFF"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="35dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/input_password"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/btn_style3"
+                        android:drawableTop="@drawable/main_doorlock"
+                        android:drawablePadding="-20dp"
+                        android:paddingTop="15dp"
+                        android:text="Open Door"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textColor="#000000" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/door"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_url="https://assets10.lottiefiles.com/private_files/lf30_0et3iqol.json" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_height="1px"
+                        android:background="#757575"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="135dp"
+                        android:fontFamily="@font/scdream7"
+                        android:text="OPEN DOOR"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="170dp">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_style3"
+                        android:drawableTop="@drawable/main_qr_check"
+                        android:drawablePadding="-10dp"
+                        android:paddingTop="13dp"
+                        android:text="Check QR"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textColor="#251A1A" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/check_qr"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_url="https://assets4.lottiefiles.com/packages/lf20_ksovfkm5.json" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_height="1px"
+                        android:background="#757575"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="135dp"
+                        android:fontFamily="@font/scdream7"
+                        android:text="CHECK QR"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/scdream7"
+                android:text="SEARCH LOG"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="2px"
+                android:background="#FFFFFF"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="360dp"
+                    android:layout_height="170dp">
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="350dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_style3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textColor="#251A1A" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/search_log"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_url="https://assets8.lottiefiles.com/packages/lf20_9nrvfvsi.json" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_height="1px"
+                        android:background="#757575"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/scdream7"
+                        android:text="SEARCH LOG"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/scdream7"
+                android:layout_marginTop="15dp"
+                android:text="CREATE QR"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="2px"
+                android:background="#FFFFFF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="360dp"
+                    android:layout_height="170dp">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="350dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_style3"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="#000000" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/create_qr"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_url="https://assets10.lottiefiles.com/packages/lf20_q30c1wrm.json" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="1px"
+                    android:background="#757575"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/scdream7"
+                    android:text="CREATE QR"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/scdream7"
+                android:layout_marginTop="15dp"
+                android:text="INPUT OTP"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="2px"
+                android:background="#FFFFFF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="70dp">
+
+                <FrameLayout
+                    android:layout_width="360dp"
+                    android:layout_height="170dp">
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="350dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_style3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textColor="#000000" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/input_otp"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_url="https://assets5.lottiefiles.com/packages/lf20_kknzmabg.json" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_height="1px"
+                        android:background="#757575"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/scdream7"
+                        android:text="INPUT OTP"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+            </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

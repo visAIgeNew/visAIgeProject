@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C70F2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CreateQR">
+
+    <TextView
+        android:id="@+id/password_title"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Scan QR Code"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:fontFamily="@font/leferipointwhiteoblique"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_style"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="100dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QR 인식 버튼을 클릭한 후 \n 카메라에 QR 코드를 인식해주세요!"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/thejamsil2light"
+                android:lineSpacingExtra="7dp">
+            </TextView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/main_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_style2"
+            android:text="메인 화면"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_style2"
+            android:text="QR 인식"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/g0" android:orderInCategory="2">
+        <item android:id="@+id/menu_user_info"
+            android:title="사용자 정보 확인"
+            />
+    </group>
+
+    <group android:id="@+id/g1">
+        <item android:id="@+id/menu_pwd"
+            android:title="도어락 비밀번호 입력" />
+        <item android:id="@+id/menu_otp"
+            android:title="OTP 코드 입력" />
+        <item android:id="@+id/menu_lock"
+            android:title="출입 이력 조회" />
+    </group>
+
+    <group android:id="@+id/g2" android:orderInCategory="2">
+        <item android:id="@+id/menu_create_qr"
+            android:title="QR 코드 생성" />
+        <item android:id="@+id/menu_qr"
+            android:title="QR 코드 확인" />
+    </group>
+</menu>
